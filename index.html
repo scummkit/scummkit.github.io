@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ScummKit — Reviving the Legendary SCUMM Engine</title>
+  <meta name="description" content="Reviving the Legendary SCUMM Engine — rebuilt with modern tools for a new era." />
+
+  <!-- Canonical: your primary domain -->
+  <link rel="canonical" href="https://www.scummkit.org/">
+
+  <!-- Favicons (put files in /assets) -->
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+
+  <!-- Apple / iOS -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+  <!-- Android / PWA (optional, but fine to keep) -->
+  <link rel="manifest" href="assets/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/android-chrome-512x512.png">
+
+  <!-- Open Graph / Twitter Cards -->
+  <meta property="og:title" content="ScummKit — Reviving the Legendary SCUMM Engine">
+  <meta property="og:description" content="Open‑source reimplementation, tools, and research to preserve classic SCUMM adventures.">
+  <meta property="og:url" content="https://www.scummkit.org/">
+  <meta property="og:image" content="https://www.scummkit.org/assets/og-image.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ScummKit — Reviving the Legendary SCUMM Engine">
+  <meta name="twitter:description" content="Open‑source reimplementation, tools, and research to preserve classic SCUMM adventures.">
+  <meta name="twitter:image" content="https://www.scummkit.org/assets/og-image.png">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <strong>ScummKit</strong>
+    <nav>
+      <a href="#why">Why</a><a href="#showcase">Showcase</a><a href="#roadmap">Roadmap</a>
+      <a href="#support">Support</a><a href="#community">Community</a><a href="#get-started">Docs</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>
+        Reviving the Legendary SCUMM Engine
+        <div class="subtitle">rebuilt with modern tools for a new era.</div>
+      </h1>
+      <p class="intro">
+        From Monkey Island to Indiana Jones — ScummKit brings the classic LucasArts adventure engine back to life,
+        open-source and ready for a new generation of fans, developers, and creators.
+      </p>
+      <p class="cta">
+        <a class="btn primary" aria-label="Support ScummKit on Patreon" href="https://patreon.com/scummkit" target="_blank" rel="noopener noreferrer">❤️ Support ScummKit</a>
+        <a class="btn secondary" aria-label="Sponsor ScummKit on GitHub" href="https://github.com/sponsors/scummkit" target="_blank" rel="noopener noreferrer">⭐ Sponsor on GitHub</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section id="why" class="light">
+    <div class="container">
+      <h2>Why ScummKit?</h2>
+      <div class="grid3">
+        <div class="card"><div class="icon">🎮</div><h3>Adventure Fans</h3><p>Relive the magic of point-and-click adventures. ScummKit keeps these legendary games alive, playable, and hackable.</p></div>
+        <div class="card"><div class="icon">👨‍💻</div><h3>Developers</h3><p>A modern reimplementation of SCUMM — clean, readable code. Learn compilers, virtual machines, and language design while contributing to a real project.</p></div>
+        <div class="card"><div class="icon">🎓</div><h3>Educators & Researchers</h3><p>Teach and study one of gaming’s most influential engines — and see it re-engineered with today’s tools.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWCASE -->
+  <section id="showcase" class="purple">
+    <div class="container">
+      <h2>ScummViewer Showcase</h2>
+      <p class="center">Browse SCUMM v4/v5 resources and preview room backgrounds.</p>
+
+      <div class="grid3">
+        <!-- Background preview -->
+        <figure>
+          <img class="shot-img" loading="lazy" src="assets/scummviewer_monkey1_beach.gif" alt="ScummViewer: Monkey Island beach background">
+          <figcaption class="shot-caption">Room backgrounds preview</figcaption>
+        </figure>
+
+        <!-- Decompiler view (WIP) -->
+        <figure>
+          <img class="shot-img" loading="lazy" src="assets/scummviewer_decompiler.gif" alt="ScummViewer: decompiled script view (work-in-progress)">
+          <figcaption class="shot-caption">Experimental script decompiler (subset)</figcaption>
+        </figure>
+
+        <!-- Costume browser (frame-by-frame) -->
+        <figure>
+          <img class="shot-img" loading="lazy" src="assets/scummviewer_costumes.gif" alt="ScummViewer: browsing a costume frame by frame">
+          <figcaption class="shot-caption">Browse and export costumes</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section id="roadmap" class="light">
+    <div class="container">
+      <h2>Where We Are Now</h2>
+      <p class="center note" style="margin-top:6px">
+        Opcode by opcode, ScummKit is bringing the classics back to life — and documenting the process along the way.
+      </p>
+
+      <div class="grid3">
+        <div class="card">
+          <div class="icon">✅</div>
+          <h3>ScummViewer</h3>
+          <p>Browse SCUMM v4/v5 (rooms, images, costumes, sound, charsets, scripts). Export images, costumes, and music. Experimental decompiler (subset of opcodes).</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🧩</div>
+          <h3>Compiler v5</h3>
+          <p>CLI tool compiles SCUMM/Marley scripts to bytecode (subset). Debug view to verify behavior; no full VM yet.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">⚙️</div>
+          <h3>Virtual Machine (Apple)</h3>
+          <p>Prototype stepping/verification sandbox in progress; full runtime planned.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🌱</div>
+          <h3>Marley Language</h3>
+          <p>Modern SCUMM-style scripting (design phase). Compiler toggle supports SCUMM ↔ Marley.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">📖</div>
+          <h3>Documentation</h3>
+          <p>Living specs of SCUMM v4/v5 resources, opcodes, and file formats — a reference for contributors and researchers.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🤝</div>
+          <h3>Community</h3>
+          <p>GitHub Discussions, Discord, and Newsletter help fans and developers connect and grow the project together.</p>
+        </div>
+      </div>
+
+      <p class="center"><a class="btn secondary" href="#support">Backers make this roadmap happen faster — Support Now</a></p>
+      <p class="center note" style="margin-top:8px">ScummKit is a clean-room reimplementation for preservation and learning. SCUMM is a trademark of Lucasfilm Games.</p>
+    </div>
+  </section>
+
+  <!-- TOOLS IN DEVELOPMENT -->
+  <section id="tools" class="purple">
+    <div class="container">
+      <h2>Tools in Development</h2>
+      <div class="grid3">
+        <figure>
+          <img class="shot-img" loading="lazy" src="assets/compiler.gif" alt="Compiler CLI compiling a small script">
+          <figcaption class="shot-caption">Compiler v5 (SCUMM/Marley subset) — CLI</figcaption>
+        </figure>
+
+        <figure>
+          <img class="shot-img" loading="lazy" src="assets/vm_debug.png" alt="VM debug view stepping instructions">
+          <figcaption class="shot-caption">VM prototype — debug/stepping view</figcaption>
+        </figure>
+
+        <figure>
+          <img class="shot-img" loading="lazy" src="assets/vscode_highlighter.gif" alt="VS Code addon with SCUMM/Marley syntax highlighting">
+          <figcaption class="shot-caption">VS Code addon — syntax highlighting & editor support</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUPPORT -->
+  <section id="support">
+    <div class="container">
+      <h2>Support ScummKit — Keep the Adventure Alive!</h2>
+      <p class="center">Choose your tier and help preserve gaming history while empowering new adventure creators.</p>
+      <div class="grid4">
+        <div class="tier"><h3>Fan <small>€5/mo</small></h3><ul><li>Name in credits</li><li>Backer role on Discord</li></ul></div>
+        <div class="tier"><h3>Supporter <small>€20/mo</small></h3><ul><li>Fan perks</li><li>Early previews</li><li>Retro wallpapers</li><li>Supporter badge</li></ul></div>
+        <div class="tier"><h3>Sponsor <small>€50/mo</small></h3><ul><li>Supporter perks</li><li>Logo/name on site & repo</li><li>Access to early builds</li></ul></div>
+        <div class="tier"><h3>Partner <small>€100+/mo</small></h3><ul><li>Sponsor perks</li><li>Collaboration / consulting</li><li>Featured spotlight</li></ul></div>
+      </div>
+      <p class="center cta">
+        <a class="btn primary" aria-label="Become a backer on Patreon" href="https://patreon.com/scummkit" target="_blank" rel="noopener noreferrer">❤️ Become a Backer on Patreon</a>
+        <a class="btn secondary" aria-label="Sponsor ScummKit on GitHub" href="https://github.com/sponsors/scummkit" target="_blank" rel="noopener noreferrer">⭐ Sponsor on GitHub</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- COMMUNITY -->
+  <section id="community" class="light">
+    <div class="container">
+      <h2>Join the Community</h2>
+      <div class="grid3">
+        <a class="card" href="https://github.com/VicentinaStudios/ScummKit/discussions" target="_blank" rel="noopener noreferrer"><h3>GitHub Discussions</h3><p>Contribute & collaborate with the dev community.</p></a>
+        <a class="card" href="https://discord.gg/VxwxvW93" target="_blank" rel="noopener noreferrer"><h3>Discord</h3><p>Chat with fans, devs, and backers (Backer lounge included).</p></a>
+        <div class="card">
+          <h3>Newsletter</h3><p>Monthly updates & roadmap notes straight to your inbox.</p>
+          <form action="https://buttondown.email/api/emails/embed-subscribe/scummkit" method="post" class="newsletter" target="_blank" rel="noopener noreferrer">
+            <input type="email" name="email" placeholder="you@example.com" required>
+            <input type="hidden" name="embed" value="1">
+            <button class="btn primary" type="submit" aria-label="Subscribe to the ScummKit newsletter">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GET STARTED -->
+  <section id="get-started" class="purple">
+    <div class="container">
+      <h2>Hack on ScummKit Today</h2>
+      <div class="card codeblock">
+<pre><code>$ scumm
+&gt; (-1 + 2) * 3 - -4</code></pre>
+        <p class="center"><a class="btn secondary" href="https://github.com/VicentinaStudios/ScummKit#readme" target="_blank" rel="noopener noreferrer">📖 Read the Docs</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container foot">
+    <div>© <span id="y"></span> Vicentina Studios</div>
+    <nav>
+      <a href="https://github.com/VicentinaStudios/ScummKit" target="_blank" rel="noopener noreferrer">GitHub</a> ·
+      <a href="https://github.com/VicentinaStudios/ScummKit#readme" target="_blank" rel="noopener noreferrer">Docs</a> ·
+      <a href="#support">Support</a> ·
+      <a href="https://github.com/VicentinaStudios/ScummKit/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">License</a>
+    </nav>
+    <div class="note">SCUMM is a trademark of Lucasfilm Games. ScummKit is a fan-led reimplementation and preservation project.</div>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
